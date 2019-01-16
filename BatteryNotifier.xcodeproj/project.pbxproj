@@ -11,7 +11,24 @@
 		B49DD1A121EFB33E00384A29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49DD1A021EFB33E00384A29 /* ViewController.swift */; };
 		B49DD1A321EFB33F00384A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49DD1A221EFB33F00384A29 /* Assets.xcassets */; };
 		B49DD1A621EFB33F00384A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49DD1A421EFB33F00384A29 /* Main.storyboard */; };
+		B49DD1B521EFCCB500384A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49DD1B421EFCCB500384A29 /* AppDelegate.swift */; };
+		B49DD1B721EFCCB500384A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49DD1B621EFCCB500384A29 /* Assets.xcassets */; };
+		B49DD1BA21EFCCB500384A29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49DD1B821EFCCB500384A29 /* MainMenu.xib */; };
+		B49DD1C321EFCDA900384A29 /* Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = B49DD1B221EFCCB500384A29 /* Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B49DD1C221EFCD9E00384A29 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				B49DD1C321EFCDA900384A29 /* Launcher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B49DD19B21EFB33E00384A29 /* BatteryNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +38,23 @@
 		B49DD1A521EFB33F00384A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B49DD1A721EFB33F00384A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49DD1A821EFB33F00384A29 /* BatteryNotifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryNotifier.entitlements; sourceTree = "<group>"; };
+		B49DD1B221EFCCB500384A29 /* Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Launcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49DD1B421EFCCB500384A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B49DD1B621EFCCB500384A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B49DD1B921EFCCB500384A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B49DD1BB21EFCCB500384A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49DD1BC21EFCCB500384A29 /* Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Launcher.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B49DD19821EFB33E00384A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49DD1AF21EFCCB500384A29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				B49DD19D21EFB33E00384A29 /* BatteryNotifier */,
+				B49DD1B321EFCCB500384A29 /* Launcher */,
 				B49DD19C21EFB33E00384A29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B49DD19B21EFB33E00384A29 /* BatteryNotifier.app */,
+				B49DD1B221EFCCB500384A29 /* Launcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +95,18 @@
 			path = BatteryNotifier;
 			sourceTree = "<group>";
 		};
+		B49DD1B321EFCCB500384A29 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				B49DD1B421EFCCB500384A29 /* AppDelegate.swift */,
+				B49DD1B621EFCCB500384A29 /* Assets.xcassets */,
+				B49DD1B821EFCCB500384A29 /* MainMenu.xib */,
+				B49DD1BB21EFCCB500384A29 /* Info.plist */,
+				B49DD1BC21EFCCB500384A29 /* Launcher.entitlements */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,6 +117,7 @@
 				B49DD19721EFB33E00384A29 /* Sources */,
 				B49DD19821EFB33E00384A29 /* Frameworks */,
 				B49DD19921EFB33E00384A29 /* Resources */,
+				B49DD1C221EFCD9E00384A29 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -81,6 +126,23 @@
 			name = BatteryNotifier;
 			productName = BatteryNotifier;
 			productReference = B49DD19B21EFB33E00384A29 /* BatteryNotifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B49DD1B121EFCCB500384A29 /* Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49DD1BD21EFCCB500384A29 /* Build configuration list for PBXNativeTarget "Launcher" */;
+			buildPhases = (
+				B49DD1AE21EFCCB500384A29 /* Sources */,
+				B49DD1AF21EFCCB500384A29 /* Frameworks */,
+				B49DD1B021EFCCB500384A29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Launcher;
+			productName = Launcher;
+			productReference = B49DD1B221EFCCB500384A29 /* Launcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,6 +156,9 @@
 				ORGANIZATIONNAME = "Ludvig Ellevold";
 				TargetAttributes = {
 					B49DD19A21EFB33E00384A29 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B49DD1B121EFCCB500384A29 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -112,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				B49DD19A21EFB33E00384A29 /* BatteryNotifier */,
+				B49DD1B121EFCCB500384A29 /* Launcher */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +189,15 @@
 			files = (
 				B49DD1A321EFB33F00384A29 /* Assets.xcassets in Resources */,
 				B49DD1A621EFB33F00384A29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49DD1B021EFCCB500384A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49DD1B721EFCCB500384A29 /* Assets.xcassets in Resources */,
+				B49DD1BA21EFCCB500384A29 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +213,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B49DD1AE21EFCCB500384A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49DD1B521EFCCB500384A29 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -147,6 +230,14 @@
 				B49DD1A521EFB33F00384A29 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B49DD1B821EFCCB500384A29 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B49DD1B921EFCCB500384A29 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,8 +363,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BatteryNotifier/BatteryNotifier.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 2X8N6D5K7V;
 				INFOPLIST_FILE = BatteryNotifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -282,6 +375,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = luelProd.BatteryNotifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -291,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BatteryNotifier/BatteryNotifier.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2X8N6D5K7V;
@@ -301,6 +396,47 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = luelProd.BatteryNotifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		B49DD1BE21EFCCB500384A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Launcher/Launcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2X8N6D5K7V;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = luelProd.Launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		B49DD1BF21EFCCB500384A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Launcher/Launcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2X8N6D5K7V;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = luelProd.Launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -322,6 +458,15 @@
 			buildConfigurations = (
 				B49DD1AC21EFB33F00384A29 /* Debug */,
 				B49DD1AD21EFB33F00384A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49DD1BD21EFCCB500384A29 /* Build configuration list for PBXNativeTarget "Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49DD1BE21EFCCB500384A29 /* Debug */,
+				B49DD1BF21EFCCB500384A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
