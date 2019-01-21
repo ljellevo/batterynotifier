@@ -42,8 +42,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if let button = statusItem.button {
             button.image = NSImage(named:NSImage.Name("StatusBarButtonImage"))
         }
-        
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(AppDelegate.startJob(_:)), userInfo: nil, repeats: true)
+        NSUserNotificationCenter.default.delegate = self
+        timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(AppDelegate.startJob(_:)), userInfo: nil, repeats: true)
 
         constructMenu()
     }
@@ -61,20 +61,34 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     
     @objc func startJob(_ sender: Any?) {
-        if capacity == 100 {
-            return
-        }
-
-        capacity = getBatteryState()
         
-        if capacity == 100 {
+        if capacity != 100 {
+            capacity = getBatteryState()
+            print(capacity)
+            if capacity == 100 {
+                print("Notification")
+                let notification = NSUserNotification()
+                notification.title = "Battery Notifier"
+                notification.subtitle = "Battery is now fully charged"
+                notification.informativeText = "Unplug mac from charger to preserve battery life"
+                notification.soundName = NSUserNotificationDefaultSoundName
+                NSUserNotificationCenter.default.deliver(notification)
+            }
+        } else {
+            capacity = getBatteryState()
+            print("Er 100")
+        }
+ /*
+        
+            print(getBatteryState())
             let notification = NSUserNotification()
             notification.title = "Battery Notifier"
             notification.subtitle = "Battery is now fully charged"
             notification.informativeText = "Unplug mac from charger to preserve battery life"
             notification.soundName = NSUserNotificationDefaultSoundName
             NSUserNotificationCenter.default.deliver(notification)
-        }
+        */
+        
     }
     
     func getBatteryState() -> Int{
@@ -90,6 +104,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             }
         }
         return capacity
+    }
+    
+    func userNotificationCenter(_ center: NSUserNotificationCenter, shouldPresent notification: NSUserNotification) -> Bool {
+        return true
     }
 }
 
