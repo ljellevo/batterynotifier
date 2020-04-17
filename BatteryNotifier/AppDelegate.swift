@@ -78,17 +78,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             capacity = getBatteryState()
             print("Er 100")
         }
- /*
-        
-            print(getBatteryState())
-            let notification = NSUserNotification()
-            notification.title = "Battery Notifier"
-            notification.subtitle = "Battery is now fully charged"
-            notification.informativeText = "Unplug mac from charger to preserve battery life"
-            notification.soundName = NSUserNotificationDefaultSoundName
-            NSUserNotificationCenter.default.deliver(notification)
-        */
-        
     }
     
     func getBatteryState() -> Int{

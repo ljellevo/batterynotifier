@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             components.removeLast()
             components.removeLast()
             components.append("MacOS")
-            components.append("MainApplication") //main app name
+            components.append("BatteryNotifier") //main app name
             
             let newPath = NSString.path(withComponents: components)
             
