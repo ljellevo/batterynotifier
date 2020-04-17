@@ -30,7 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B49DD19B21EFB33E00384A29 /* BatteryNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49DD19B21EFB33E00384A29 /* Battery Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49DD19E21EFB33E00384A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49DD1A221EFB33F00384A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49DD1A521EFB33F00384A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		B49DD19C21EFB33E00384A29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B49DD19B21EFB33E00384A29 /* BatteryNotifier.app */,
+				B49DD19B21EFB33E00384A29 /* Battery Notifier.app */,
 				B49DD1B221EFCCB500384A29 /* Launcher.app */,
 			);
 			name = Products;
@@ -107,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B49DD19A21EFB33E00384A29 /* BatteryNotifier */ = {
+		B49DD19A21EFB33E00384A29 /* Battery Notifier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B49DD1AB21EFB33F00384A29 /* Build configuration list for PBXNativeTarget "BatteryNotifier" */;
+			buildConfigurationList = B49DD1AB21EFB33F00384A29 /* Build configuration list for PBXNativeTarget "Battery Notifier" */;
 			buildPhases = (
 				B49DD19721EFB33E00384A29 /* Sources */,
 				B49DD19821EFB33E00384A29 /* Frameworks */,
@@ -120,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = BatteryNotifier;
+			name = "Battery Notifier";
 			productName = BatteryNotifier;
-			productReference = B49DD19B21EFB33E00384A29 /* BatteryNotifier.app */;
+			productReference = B49DD19B21EFB33E00384A29 /* Battery Notifier.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B49DD1B121EFCCB500384A29 /* Launcher */ = {
@@ -173,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B49DD19A21EFB33E00384A29 /* BatteryNotifier */,
+				B49DD19A21EFB33E00384A29 /* Battery Notifier */,
 				B49DD1B121EFCCB500384A29 /* Launcher */,
 			);
 		};
@@ -449,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B49DD1AB21EFB33F00384A29 /* Build configuration list for PBXNativeTarget "BatteryNotifier" */ = {
+		B49DD1AB21EFB33F00384A29 /* Build configuration list for PBXNativeTarget "Battery Notifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B49DD1AC21EFB33F00384A29 /* Debug */,
